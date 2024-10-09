@@ -1,0 +1,22 @@
+Django
+python-dotenv
+str2bool
+djangorestframework
+markdown
+django-filter
+factory_boy
+django-tenants
+django-environ
+django-autoslug
+django-phonenumber-field
+phonenumbers
+Pillow
+
+# Database
+psycopg2-binary
+dj-database-url
+
+#Linting 
+flake8
+black
+isort
