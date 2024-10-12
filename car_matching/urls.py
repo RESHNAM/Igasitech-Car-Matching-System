@@ -23,3 +23,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path("superadmin/", admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+admin.site.site_header = "Igasitech Car Matching System Admin"
+admin.site.site_title = "Car Matching System Portal"
+admin.site.index_title = "Welcome to Igasitech Car Matching System Administration"
