@@ -11,6 +11,7 @@ django-autoslug
 django-phonenumber-field
 phonenumbers
 Pillow
+django-countries-with-calling-codes
 
 # Database
 psycopg2-binary
