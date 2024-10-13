@@ -12,6 +12,9 @@ django-phonenumber-field
 phonenumbers
 Pillow
 django-countries==7.2.1
+djoser
+djangorestframework-simplejwt
+PyJWT
 
 # Database
 psycopg2-binary
