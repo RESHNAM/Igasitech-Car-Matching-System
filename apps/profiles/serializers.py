@@ -17,7 +17,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = ["username","first_name","last_name", "full_name", 
                   "email", "id", "phone_number", "profile_photo", "about_me", 
-                  "gender", "country", "city", "is_buyer", "is_seller", "ratings",
+                  "gender", "country", "city", "is_buyer", "is_seller", "rating",
                   "num_reviews","reviews"]
         
     def get_full_name(self, obj):
