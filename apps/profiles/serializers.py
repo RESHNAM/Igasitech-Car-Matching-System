@@ -18,7 +18,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = ["username","first_name","last_name", "full_name", 
                   "email", "id", "phone_number", "profile_photo", "about_me", 
                   "gender", "country", "city", "is_buyer", "is_seller", "rating",
-                  "num_reviews","reviews"]
+                  "num_reviews", "reviews"]
         
     def get_full_name(self, obj):
         first_name = obj.user.first_name.title()
@@ -30,8 +30,8 @@ class ProfileSerializer(serializers.ModelSerializer):
         serializer = RatingSerializer(reviews, many=True)
         return serializer.data
     
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
+    # def to_representation(self, instance):
+    #     representation = super().to_representation(instance)
 
 class UpdateProfileSerializer(serializers.ModelSerializer):
     country = CountryField(name_only=True)
